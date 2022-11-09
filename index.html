@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Escapes</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container-main">
+    <header>
+        <nav class="nav-main">
+            <div class="logo">
+                <img src="./assets/images/sunnyescapes-logo-black.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#container-main">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+    </nav>
+    </header>
+
+    <div class="hero-image">
+        <img src="./assets/images/sunnybeach2.jpg" alt="">
+        <div class="hero-text">
+          <h1>Sunny Escapes</h1>
+          <h2>Travels</h2>
+          <button>Take me away!</button>
+        </div>
+      </div>
+
+      <div class="flavor-text">
+        <p>Are you tired of everything? Stressed out? Do you have a bit of extra cash on you?</p>
+        <div id="gallery">
+          <p>We've got the perfect solution for you!</p>
+    </div>
+    </div>
+    
+    <hr>
+
+    <div id="modal-text">
+      <p>Take a trip to somewhere nice and warm, like Vanuatu, Belize, Tuvalu or any other place you've never heard of (and can't afford!)</p>
+    </div>
+
+      <div class="center-grid">
+      <div class="modal-grid">
+
+      <!-- Trigger the Modal -->
+      <img id="myImg" src="./assets/images/gallery/img_beach.jpg" alt="Beach">
+      <img id="myImg" src="./assets/images/gallery/img_anotherbeach.jpg" alt="Another Beach">
+      <img id="myImg" src="./assets/images/gallery/img_yetanotherbeach.jpg" alt="Yet Another Beach">
+      <img id="myImg" src="./assets/images/gallery/img_rainforest.jpg" alt="Rainforest">
+      <img id="myImg" src="./assets/images/gallery/img_anotherrainforest.jpg" alt="Another Rainforest">
+      <img id="myImg" src="./assets/images/gallery/img_yetanotherrainforest.jpg" alt="Yet Another Rainforest">
+      <img id="myImg" src="./assets/images/gallery/img_desert.jpg" alt="Desert">
+      <img id="myImg" src="./assets/images/gallery/img_anotherdesert.jpg" alt="Another Desert">
+      <img id="myImg" src="./assets/images/gallery/img_yetanotherdesert.jpg" alt="Yet Another Desert">
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+      
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+      
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
+    </div>
+  </div>
+
+    <div id="newsletter">
+    <form novalidate onsubmit="return validate(this)">
+      <fieldset>
+        <legend><h3>Newsletter</h3></legend>
+        <h3>Sign up and get exclusive news on travel destinations and more!</h3>
+        <div>
+          <label for="fname">Your First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="John" required>
+          <label for="lname">Your Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Smith" required>
+          <label for="email">Your Email</label>
+          <input type="text" id="email" name="email" placeholder="email@email.com" required>
+          <input type="submit" value="Send">
+      </div>
+    </fieldset>
+    </form>
+  </div>
+
+  <footer class="footer-main">
+    <div class="footer-social">
+      <img src="./assets/images/icons8-instagram-64.png" alt="">
+      <img src="./assets/images/icons8-reddit-64.png" alt="">
+      <img src="./assets/images/icons8-youtube-64.png" alt="">
+    </div>
+    <p>© 2022 Sunny Escapes Inc.</p>
+  </footer>
+
+    
+  </div>
+</body>
+</html>
